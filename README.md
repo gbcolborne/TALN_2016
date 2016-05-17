@@ -21,8 +21,9 @@ Code
 * `CoocTensor.py` et `CoocMatrix.py` : classes utilisées par
   `exp_AD.py` pour construire des matrices de cooccurrence.
 
-* `eval_utils.py` : fonctions utilisées par `exp_AD.py` et `exp_W2V.py` pour traiter les données de
-  référence et calculer les mesures d'évaluation.
+* `eval_utils.py` : fonctions utilisées par `exp_AD.py` et
+  `exp_W2V.py` pour traiter les données de référence et calculer les
+  mesures d'évaluation.
 
 * `preprocess_PANACEA_FR.py` : programme qui extrait le contenu textuel
   du corpus français PANACEA et applique différentes opérations de
@@ -78,7 +79,9 @@ TAGDIR dans `preprocess_PANACEA_FR.py`).
 
 Pour utiliser `exp_W2V.py`, il faut avoir installé
 [word2vec](https://code.google.com/archive/p/word2vec/). Installer
-dans /usr/local (sinon modifier PATH_W2V dans `exp_W2V.py`).
+dans /usr/local (sinon modifier PATH_W2V dans `exp_W2V.py`). Il faut
+aussi avoir installé la bibliothèque
+[Gensim](https://radimrehurek.com/gensim/) pour Python.
 
 
 
