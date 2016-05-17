@@ -45,8 +45,8 @@ Ressources
   [DiCoEnviro](http://olst.ling.umontreal.ca/cgi-bin/dicoenviro/search_enviro.cgi).
 
 
-Notes
------
+Utilisation
+-----------
 
 L'expérience décrite dans [1] peut être reproduite de la façon suivante :
 
@@ -61,21 +61,15 @@ ci-dessous.
 
 4. `exp_W2V.py -s corpus.txt res_W2V.csv`
 
+Les fichiers res_AD.csv et res_W2V.csv contiendront la MAP sur chacune
+des relations dans les données de référence en fonction de la
+paramétrisation du modèle (analyse distributionnelle et word2vec
+respectivement).
 
-Les résultats (MAP sur chacune des relations dans les données de
-référence en fonction de la paramétrisation du modèle) seront dans
-res_AD.csv et res_W2V.csv.
+Pour utiliser `exp_AD.py` ou `exp_W2V.py`, il faut avoir installé Python
+et les bibliothèques NumPy et scikit-learn pour Python.
 
-Il faut avoir installé Python et les bibliothèques NumPy, SciPy et
-scikit-learn pour Python. 
-
-Pour utiliser `preprocess_PANACEA_FR.py`, il faut avoir installé
-[TreeTagger](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/)
-ainsi que la bibliothèque
-[TreeTaggerWrapper](https://pypi.python.org/pypi/treetaggerwrapper)
-pour Python. Installer TreeTagger dans /usr/local (sinon modifier
-TAGDIR dans `preprocess_PANACEA_FR.py`).
-
+Pour utiliser `exp_AD.py`, il faut aussi avoir installé SciPy.
 
 Pour utiliser `exp_W2V.py`, il faut avoir installé
 [word2vec](https://code.google.com/archive/p/word2vec/). Installer
@@ -83,6 +77,12 @@ dans /usr/local (sinon modifier PATH_W2V dans `exp_W2V.py`). Il faut
 aussi avoir installé la bibliothèque
 [Gensim](https://radimrehurek.com/gensim/) pour Python.
 
+Pour utiliser `preprocess_PANACEA_FR.py`, il faut avoir installé
+[TreeTagger](http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/)
+ainsi que la bibliothèque
+[TreeTaggerWrapper](https://pypi.python.org/pypi/treetaggerwrapper)
+pour Python. Installer TreeTagger dans /usr/local (sinon modifier
+TAGDIR dans `preprocess_PANACEA_FR.py`).
 
 
 Références
