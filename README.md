@@ -55,19 +55,21 @@ l'environnement](http://catalog.elra.info/product_info.php?products_id=1186&lang
 dossier contenant les fichiers XML du corpus sera appelé PANACEA_XML
 ci-dessous.
 
-2. `preprocess_PANACEA_FR.py -l PANACEA_XML corpus.txt`
+2. `python preprocess_PANACEA_FR.py -l PANACEA_XML corpus.txt`
 
-3. `exp_AD.py -s corpus.txt res_AD.csv`
+3. `python exp_AD.py -s corpus.txt res_AD.csv`
 
-4. `exp_W2V.py -s corpus.txt res_W2V.csv`
+4. `python exp_W2V.py -s corpus.txt res_W2V.csv`
 
 Les fichiers res_AD.csv et res_W2V.csv contiendront la MAP sur chacune
 des relations dans les données de référence en fonction de la
 paramétrisation du modèle (analyse distributionnelle et word2vec
 respectivement).
 
-Pour utiliser `exp_AD.py` ou `exp_W2V.py`, il faut avoir installé Python
-et les bibliothèques NumPy et scikit-learn pour Python.
+Il faut avoir installé Python.
+
+Pour utiliser `exp_AD.py` ou `exp_W2V.py`, il faut avoir installé les
+bibliothèques NumPy et scikit-learn pour Python.
 
 Pour utiliser `exp_AD.py`, il faut aussi avoir installé SciPy.
 
