@@ -74,9 +74,9 @@ bibliothèques NumPy et scikit-learn pour Python.
 Pour utiliser `exp_AD.py`, il faut aussi avoir installé SciPy.
 
 Pour utiliser `exp_W2V.py`, il faut avoir installé
-[word2vec](https://code.google.com/archive/p/word2vec/). Installer
-dans /usr/local (sinon modifier PATH_W2V dans `exp_W2V.py`). Il faut
-aussi avoir installé la bibliothèque
+[word2vec](https://code.google.com/p/word2vec/). Installer dans
+/usr/local (sinon modifier PATH_W2V dans `exp_W2V.py`). Il faut aussi
+avoir installé la bibliothèque
 [Gensim](https://radimrehurek.com/gensim/) pour Python.
 
 Pour utiliser `preprocess_PANACEA_FR.py`, il faut avoir installé
