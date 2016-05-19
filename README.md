@@ -7,23 +7,23 @@ pour reproduire l'expérience décrite dans [1].
 Code
 ----
 
-* `exp_AD.py` et `exp_W2V.py` : programmes qui construisent et
-  évaluent des modèles distributionnels (analyse distributionnelle et
-  word2vec respectivement) sur les données de référence. **N.B.** Le
-  programme `exp_AD.py` exige beaucoup de mémoire si le nombre de
-  mots-cibles est élevé.
+* `exp_AD.py` et `exp_W2V.py` : programmes qui construisent des
+  modèles distributionnels (analyse distributionnelle et word2vec
+  respectivement) et les évaluent sur les données de
+  référence. **ATTENTION** : Le programme `exp_AD.py` exige beaucoup
+  de mémoire si le nombre de mots-cibles est élevé.
 
-* `Corpus.py` : classe utilisée par `exp_AD.py` et `exp_W2V.py` pour
-  identifier les mots-cibles en fonction de leur fréquence dans le
-  corpus et d'autres critères. Elle est aussi utilisée pour générer
-  les phrases que contient le corpus (dans le cas de `exp_AD.py`).
+* `Corpus.py` : module utilisé par `exp_AD.py` et `exp_W2V.py` pour
+  générer les phrases que contient le corpus, identifier les
+  mots-cibles en fonction de leur fréquence dans le corpus et d'autres
+  critères, etc.
 
-* `CoocTensor.py` et `CoocMatrix.py` : classes utilisées par
-  `exp_AD.py` pour construire des matrices de cooccurrence.
+* `CoocTensor.py` : module utilisé par `exp_AD.py` pour construire des
+  matrices de cooccurrence.
 
-* `eval_utils.py` : fonctions utilisées par `exp_AD.py` et
-  `exp_W2V.py` pour traiter les données de référence et calculer les
-  mesures d'évaluation.
+* `eval_utils.py` : module utilisé par `exp_AD.py` et `exp_W2V.py`
+  pour traiter les données de référence et calculer les mesures
+  d'évaluation.
 
 * `preprocess_PANACEA_FR.py` : programme qui extrait le contenu textuel
   du corpus français PANACEA et applique différentes opérations de
