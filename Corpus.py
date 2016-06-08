@@ -80,11 +80,14 @@ class Corpus:
         apply_filters -- if True, filters are applied to return only
           words that satisfy certain criteria (e.g. they contain only
           letters, digits or hyphens).
-        stopwords -- a set of stop words which will be discarded
+        stopwords -- a set of stop words which will be discarded (if
+          apply_filters is True)
         """
 
         if stopwords and type(stopwords) != set:
             stopwords = set(stopwords)
+        if not stopwords:
+            stopwords = set()
         if apply_filters:
             # Define illegal characters: all punctuation except the
             # hyphen, as well as all characters in the Latin-1
